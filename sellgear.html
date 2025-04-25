@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg's Skiing &amp; Snowboarding - Sell Gear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <h1>Greg's Skiing &amp; Snowboarding</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="skis.html">Skis</a></li>
+                <li><a href="snowboards.html">Snowboards</a></li>
+                <li><a href="sellgear.html">Sell Gear</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Sell Your Ski & Snowboard Gear</h1>
+        <form action="mailto:wilsong@cbchs.org" method="post" enctype="text/plain" id="sellForm">
+            <label for="title">Item Title:</label>
+            <input type="text" name="Item Title" id="title" required><br><br>
+
+            <label for="category">Category:</label>
+            <select name="Category" id="category" required>
+                <option value="">Select Type</option>
+                <option value="Ski">Ski</option>
+                <option value="Snowboard">Snowboard</option>
+            </select><br><br>
+
+            <label for="length">Length (cm):</label>
+            <input type="number" name="Length" id="length" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea name="Description" id="description" required></textarea><br><br>
+
+            <label for="price">Price ($):</label>
+            <input type="number" name="Price" id="price" required><br><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" name="Email" id="email" required><br><br>
+
+            <input type="submit" value="Send Listing">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Greg's Skiing &amp; Snowboarding</p>
+    </footer>
+</body>
+</html>
